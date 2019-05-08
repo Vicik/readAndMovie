@@ -1,0 +1,8 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='container'>
+  <image src='/imgs/avatar/1.png' class='user-avatar'></image>
+  <text class='welcome'>Hello 七月</text>
+  <view class='start-container' bindtap='moveToIndex'>
+    <text class='start'>开启小程序之旅</text>
+  </view>
+</view>

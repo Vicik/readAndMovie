@@ -1,0 +1,38 @@
+.detail-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20rpx 0;
+  margin-left: 40rpx;
+  border-bottom: 1px solid #eee;
+}
+.detail-container:last-child{
+  border: none;
+}
+.analyse{
+  flex: 0 0 40%;
+}
+.analyse-text{
+  margin-bottom: 15rpx;
+}
+.analyse text{
+  margin-right: 10rpx;
+  font-size: 40rpx;
+}
+.detail-start{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mark{
+  margin-right: 40rpx;
+  color: #ccc;
+}
+.start-text{
+  padding: 5rpx 10rpx;
+  margin-right: 10rpx;
+  background-color: #eee;
+  border-radius: 5rpx;
+  color: #000;
+}

@@ -1,0 +1,23 @@
+<!--pages/movie/movie.wxml-->
+<import src="/template/movieList/movie-list-template.wxml" />
+<import src='/template/movie-grid/movie-grid-template' />
+<view class='search'>
+    <icon type='search' size='20' color='#405f80'  class='search-img' bindtap='search' ></icon>
+    <input type='text' placeholder='釜山行' value="{{input_code}}" bindfocus='focus' bindconfirm="search" placeholder-class='placeholder'/>
+    <image src='../../imgs/icon/xx.png' class='close' bindtap='close' wx:if='{{searchPanelShow}}'></image>
+  </view>
+<view class="container" wx:if="{{containerShow}}">
+  <view class='movies-container'>
+    <template is='movieList' data="{{...inTheaters}}"></template>
+  </view>
+  <view class='movies-container'>
+    <template is='movieList' data="{{...comingSoon}}"></template>
+  </view>
+  <view class='movies-container'>
+    <template is='movieList' data="{{...top250}}"></template>
+  </view>
+</view>
+
+<view class='search-panel' wx:if="{{searchPanelShow}}">
+  <template is="movie-grid"  data="{{...searchResult}}"></template>
+</view>

@@ -1,0 +1,19 @@
+@import '/template/movie/movie-template.wxss';
+/* .grid-item{
+  float: :left;
+  margin-bottom: 40rpx;
+} */
+/* .grid-container{
+  margin: 40rpx 0 40rpx 6rpx;
+} */
+.grid-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.grid-item{
+  margin: 20rpx 0;
+}
+scroll-view{
+  height: 100vh;
+}

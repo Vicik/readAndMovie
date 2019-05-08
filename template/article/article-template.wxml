@@ -1,0 +1,17 @@
+<template name="article">
+  <view class='article'>
+    <view class='article-header'>
+      <image src='{{avatar}}' class='article-avatar'></image>
+      <text class='article-date'>{{date}}</text>
+    </view>
+    <text class='article-title'>{{title}}</text>
+    <image src='{{imgSrc}}' class='article-img'></image>
+    <text class='article-content'>{{content}}</text>
+    <view  class='article-like'>
+      <image src='/imgs/icon/chat1.png' class='article-like-img'></image>
+      <text class='article-like-count'>{{reading}}</text>
+      <image src='/imgs/icon/view.png' class='article-like-img'></image>
+      <text class='article-like-count'>{{collection}}</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,19 @@
+.star-container{
+  display: flex;
+  align-items: center;
+}
+.star-container .star-wrapper{
+  display: flex;
+  align-items: center;
+  height: 17rpx;
+  margin-right: 24rpx;
+}
+.star-container image{
+  margin-left: 3rpx;
+  width: 17rpx;
+  height: 17rpx;
+}
+.rating{
+  font-size: 24rpx;
+  color: #1f3463;
+}

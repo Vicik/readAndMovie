@@ -1,0 +1,72 @@
+/* pages/article/article.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.article{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  background-color: #fff;
+}
+.banner{
+  vertical-align: top;
+  width: 750rpx;
+  height: 460rpx;
+}
+.audio{
+  position: absolute;
+  left: 50%;
+  top: 180rpx;
+  opacity: 0.6;
+  margin-left: -50rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.article-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+  color: #666;
+}
+.article-header .avatar{
+  margin-right: 20rpx;
+  width: 90rpx;
+  height: 90rpx;
+}
+.article-header .public{
+  margin: 0 20rpx;
+  position: relative;
+  top: 5rpx;
+}
+.article-title{
+  padding: 20rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+  color: #000;
+}
+.separator{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 50rpx 0;
+  height: 2rpx;
+  background-color: #ddd;
+}
+.separator image{
+  width: 102rpx;
+  height: 102rpx;
+  vertical-align: middle;
+}
+.separator image:last-child{
+  margin-left: 20rpx;
+}
+.content{
+  padding: 20rpx;
+  line-height: 44rpx;
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+}

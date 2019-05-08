@@ -1,0 +1,13 @@
+/**read.wxss**/
+@import "/template/article/article-template.wxss";
+.container{
+  background-color: #F2F2F2;
+}
+swiper{
+  width: 750rpx;
+  height: 480rpx;
+}
+.slide-image{
+  width: 750rpx;
+  height: 480rpx;
+}

@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/user/user",
+    "pages/movie/movie",
+    "pages/read/read",
+    "pages/movie-detail/movie-detail",
+    "pages/more-movie/more-movie",
+    "pages/welcome/welcome",
+    "pages/article/article"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#405F80",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#E5E5E5",
+    "selectedColor": "#1F4BA5",
+    "list": [
+      {
+        "pagePath": "pages/read/read",
+        "text": "阅读",
+        "iconPath": "imgs/tab/yuedu.png",
+        "selectedIconPath": "imgs/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "imgs/tab/dianying.png",
+        "selectedIconPath": "imgs/tab/dianying_hl.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "imgs/tab/ciwei.png",
+        "selectedIconPath": "imgs/tab/ciwei_hl.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

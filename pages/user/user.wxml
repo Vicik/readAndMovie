@@ -1,0 +1,24 @@
+<!--pages/user/user.wxml-->
+<import src='/template/analyse/analyse-template.wxml' />
+<view class='container'>
+  <view class='login-out'>
+    <button type='default' open-type="getUserInfo" bindgetuserinfo='login' wx:if="{{!userInfo.nickName}}" class='login'>登录</button>
+    <view class='user'  wx:if="{{userInfo.nickName}}">
+      <view class='user-info'>
+        <image src='{{userInfo.avatar}}' class='avatar'></image>
+        <view class='user-name'>{{userInfo.nickName}}</view>
+      </view>
+      <text class='out' bindtap='out'>退出登录</text>
+    </view>
+    
+  </view>
+  <view class='detail'>
+    <view class='detail-head'>
+      <view class='title'>我的书影音</view>
+      <view bindtap='check'>{{actionText}}<text class='check'>></text></view>
+    </view>
+    <template is='analyse' data='{{...movie}}'></template>
+    <template is='analyse' data='{{...read}}'></template>
+    <template is='analyse' data='{{...music}}'></template>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/article/article.wxml-->
+<view class='container'>
+  <image src='{{article.imgSrc}}' class='banner'></image>
+  <view class='article'>
+    <view class='article-header'>
+      <image class='avatar' src='{{article.avatar}}'></image>
+      <text>{{article.author}}</text>
+      <view class='public'>发表于</view>
+      <text>{{article.dateTime}}</text>
+    </view>
+    <view class='article-title'>{{article.title}}</view>
+    <view class='separator'>
+      <view>
+        <image src='{{collected?"/imgs/icon/collection.png":"/imgs/icon/collection-anti.png"}}' catchtap='collection'></image>
+        <image src='/imgs/icon/share.png' catchtap='share'></image>
+      </view>
+    </view>
+    <view class='content'>{{article.detail}}</view>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+<template name='analyse'>
+  <view class='detail-container'>
+    <view class='analyse'>
+      <view class='analyse-text'>{{title}}</view>
+      <view><text>0</text>看过</view>
+    </view>
+    <view class='detail-start'>
+      <view class='mark'>
+        <text>{{mark}}</text>
+        <view>{{analyse}}</view>
+      </view>
+      <view class='start'>
+        <text class='start-text'>立即开启</text>
+        <text>></text>
+      </view>
+    </view>
+  </view>
+</template>
